@@ -1,4 +1,5 @@
 import search
+import os
 
 devam = True
 
@@ -11,6 +12,7 @@ def get_prompt(text = ""):
     except ValueError:
         print("sadece sayi!!")
     except KeyboardInterrupt:
+        os.remove("./image.jpg")
         quit()
 
 while devam:
@@ -76,5 +78,7 @@ while devam:
         search.Text(text_prompt)
     if menu_secenek == 0:
         break
+    
+    os.remove("./image.jpg")
 
     
