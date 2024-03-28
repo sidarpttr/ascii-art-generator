@@ -1,8 +1,8 @@
 from PIL import Image
 
 class Resim:
-    siyah = "*"
-    beyaz = " "
+    siyah = " "
+    beyaz = "*"
     def __init__(self, path, size, thresold=1):
         self.size = size
         self.image = Image.open(path)
