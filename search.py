@@ -4,6 +4,7 @@ from urllib.request import urlretrieve
 import requests
 import draw
 
+font_family = "Anonymous.ttf"
 
 class ResimKaynak():
     def __init__(self, size):
@@ -104,7 +105,7 @@ class Text(ResimKaynak):
         
 
     def text_olustur(self):
-        font = ImageFont.truetype( self.fonts_path + "Anonymous.ttf", size=25)
+        font = ImageFont.truetype( self.fonts_path + font_family, size=25)
         self.draw.text((0,0), self.text, fill=(0, 0, 0), font=font)
         self.img.save("image.jpg")
         self.ciz()
