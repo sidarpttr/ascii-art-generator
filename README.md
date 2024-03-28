@@ -1,4 +1,4 @@
-# ASCII Art Oluşturma Programı
+# ASCII Art Program
 
 Bu program, kullanıcının girdiği bir metne dayanarak ASCII sanatını oluşturur veya belirlenen bir font kullanarak metni ASCII sanatı haline getirir.
 
